@@ -1220,3 +1220,11 @@ dialog { border-radius: 22px; }
   .author-mark { padding: 4px; }
   .hero h1 { font-size: 28px; }
 }
+
+/* 首屏：攻略标题置顶 */
+.hero h1.hero-title { font-size: clamp(36px, 5.2vw, 60px); line-height: 1.15; font-weight: 900; max-width: none; margin: 14px 0 12px;
+  background: linear-gradient(90deg, #6C3BFF 0%, #8F5BFF 55%, #FF6B5E 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero .hero-sub { margin: 0 0 14px; }
+.hero-hook { font-size: clamp(20px, 2.4vw, 26px); font-weight: 800; line-height: 1.4; color: var(--text, #17151F); margin: 0 0 14px; max-width: 18em; }
+[data-theme="dark"] .hero-hook, .dark .hero-hook { color: #F7F5F2; }
+@media (max-width: 640px) { .hero h1.hero-title { font-size: 34px; } .hero-hook { font-size: 19px; } }
